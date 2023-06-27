@@ -34,6 +34,8 @@ char	*get_line(char *buf)
 
 	i = 0;
 	j = 0;
+	if (!buf[i])
+		return (NULL);
 	while (buf[i] && buf[i] != '\n')
 		i++;
 	if (buf[i] == '\n')
